@@ -40,7 +40,7 @@
 }
 
 .logo {
-  background: linear-gradient(to right, red , rgb(0, 140, 255));
+  background: linear-gradient(to right, rgb(174, 0, 255) , rgb(255, 0, 212));
   display: inline-block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,6 +50,7 @@
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
+  filter: drop-shadow(1px 1px #333);
 }
 
 .logo-container {
