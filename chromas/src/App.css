@@ -47,4 +47,12 @@
   font-family: 'Lobster';
   font-weight: 600;
   font-size: 100px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 10%;
 }
