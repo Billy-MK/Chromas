@@ -2,8 +2,8 @@ import React from 'react';
 
 function Logo() {
     return (
-        <div className="logo-container">
-            <div className="logo">Chromas.</div> 
+        <div id="logo-container">
+            <div id="logo">Chromas.</div> 
         </div>
     )
 }

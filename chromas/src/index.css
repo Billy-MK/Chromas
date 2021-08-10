@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
   background-image: url(./images/pastel-background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
