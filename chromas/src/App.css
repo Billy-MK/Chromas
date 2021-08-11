@@ -50,7 +50,11 @@
   position: fixed;
   top: 20%;
   left: 0;
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(58, 58, 58);
   padding: 1%;
   border-radius: 0% 20% 20% 0%;
+}
+
+.menu-list a {
+  color: white;
 }
