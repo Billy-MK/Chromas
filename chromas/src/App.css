@@ -48,6 +48,9 @@
 
 .nav-container {
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 0;
+  background-color: rgb(19, 19, 19);
+  padding: 1%;
+  border-radius: 0% 20% 20% 0%;
 }
