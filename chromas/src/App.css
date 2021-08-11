@@ -45,3 +45,9 @@
   background-color: #8d65fc;
   transition: opacity 0.3s, margin-top 0.7s;
 }
+
+.nav-container {
+  position: fixed;
+  top: 10%;
+  left: 0;
+}

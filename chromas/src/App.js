@@ -1,5 +1,7 @@
 import './App.css';
 import Logo from './components/logo';
+import Nav from './components/Nav/Nav';
+
 
 function start() {
   document.getElementById('logo-container').style.marginTop = '-10%'
@@ -15,6 +17,7 @@ function App() {
       <div id='button-container'>
         <button className="button is-medium is-rounded" id='start-button' onClick={start}>Get Started</button>
       </div>
+      <Nav />
     </div>
   );
 }
