@@ -1,6 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Nav() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleSlide() {
+        isOpen ? setIsOpen(false) : setIsOpen(true);
+        console.log(isOpen);
+    }
+
     return (
         <nav className="nav-container">
             <aside className="menu">
@@ -13,6 +21,7 @@ function Nav() {
                         </ul>
                     </li>
                 </ul>
+                <button onClick={toggleSlide}>TestSlider</button>
             </aside>
         </nav>
     )
