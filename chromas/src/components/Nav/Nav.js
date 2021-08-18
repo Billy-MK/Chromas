@@ -4,6 +4,7 @@ import { SketchPicker, AlphaPicker, BlockPicker, ChromePicker, CirclePicker, Com
 function Nav() {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [color, setColor] = useState('fff');
 
     function toggleSlide() {
         if (isOpen === true) {
@@ -13,6 +14,14 @@ function Nav() {
             document.getElementById('nav-container').style.left = '-100%'
         }
         setIsOpen(!isOpen)
+    }
+
+    function handleChange(color) {
+        setColor(color)
+    }
+
+    function handleChangeComplete(color) {
+        setColor(color)
     }
 
     return (
@@ -26,7 +35,7 @@ function Nav() {
                         <ul>
                             <li><a>Change template</a></li>
                         </ul>
-                        <SketchPicker />
+                        <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} />
                         {/* <AlphaPicker /> <BlockPicker /> <ChromePicker /> <CirclePicker /> <CompactPicker /> <GithubPicker /> <HuePicker /> <MaterialPicker /> <PhotoshopPicker /> <SketchPicker /> <SliderPicker /> <SwatchesPicker /> <TwitterPicker /> */}
                     </li>
                 </ul>
