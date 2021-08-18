@@ -8,6 +8,7 @@ function start() {
   document.getElementById('logo').style.opacity = '0%'
   document.getElementById('start-button').style.marginTop = '-0%'
   document.getElementById('start-button').style.opacity = '0%'
+  document.getElementById('nav-container').style.left = '0%'
 }
 
 function App() {

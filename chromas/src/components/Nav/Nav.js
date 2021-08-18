@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import { SketchPicker, AlphaPicker, BlockPicker, ChromePicker, CirclePicker, CompactPicker, GithubPicker, HuePicker, MaterialPicker, PhotoshopPicker, SliderPicker, SwatchesPicker, TwitterPicker } from 'react-color';
 
 function Nav() {
 
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     function toggleSlide() {
         if (isOpen === true) {
@@ -25,6 +26,8 @@ function Nav() {
                         <ul>
                             <li><a>Change template</a></li>
                         </ul>
+                        <SketchPicker />
+                        {/* <AlphaPicker /> <BlockPicker /> <ChromePicker /> <CirclePicker /> <CompactPicker /> <GithubPicker /> <HuePicker /> <MaterialPicker /> <PhotoshopPicker /> <SketchPicker /> <SliderPicker /> <SwatchesPicker /> <TwitterPicker /> */}
                     </li>
                 </ul>
             </aside>
