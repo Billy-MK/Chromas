@@ -4,6 +4,7 @@ import { SketchPicker, AlphaPicker, BlockPicker, ChromePicker, CirclePicker, Com
 
 function ColorSelector() {
     const [color, setColor] = useState('fff');
+    const [isOpen, setIsOpen] = useState('false');
 
     function handleChange(color) {
         setColor(color)
@@ -13,9 +14,14 @@ function ColorSelector() {
         setColor(color)
     }
 
+    function toggleOpen() {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div>
-            <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} />
+            <button onClick={toggleOpen}>selector</button>
+            {isOpen ? <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} /> : null};
         </div>
     )
 }
