@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { SketchPicker, AlphaPicker, BlockPicker, ChromePicker, CirclePicker, CompactPicker, GithubPicker, HuePicker, MaterialPicker, PhotoshopPicker, SliderPicker, SwatchesPicker, TwitterPicker } from 'react-color';
+import ColorSelector from '../ColorSelector/ColorSelector';
 
 function Nav() {
 
@@ -16,14 +16,6 @@ function Nav() {
         setIsOpen(!isOpen)
     }
 
-    function handleChange(color) {
-        setColor(color)
-    }
-
-    function handleChangeComplete(color) {
-        setColor(color)
-    }
-
     return (
     <>
         <nav className="nav-container" id="nav-container">
@@ -35,8 +27,7 @@ function Nav() {
                         <ul>
                             <li><a>Change template</a></li>
                         </ul>
-                        <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} />
-                        {/* <AlphaPicker /> <BlockPicker /> <ChromePicker /> <CirclePicker /> <CompactPicker /> <GithubPicker /> <HuePicker /> <MaterialPicker /> <PhotoshopPicker /> <SketchPicker /> <SliderPicker /> <SwatchesPicker /> <TwitterPicker /> */}
+                        <ColorSelector />
                     </li>
                 </ul>
             </aside>
