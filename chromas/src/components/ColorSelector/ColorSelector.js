@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { SketchPicker, AlphaPicker, BlockPicker, ChromePicker, CirclePicker, CompactPicker, GithubPicker, HuePicker, MaterialPicker, PhotoshopPicker, SliderPicker, SwatchesPicker, TwitterPicker } from 'react-color';
-
+import ThemeContext from "../../utils/themeContext";
 
 function ColorSelector(props) {
     const [color, setColor] = useState('fff');

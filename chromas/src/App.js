@@ -2,6 +2,7 @@ import './App.css';
 import Logo from './components/logo';
 import Nav from './components/Nav/Nav';
 import Template from './components/Template/Template';
+import ThemeContext from './utils/themeContext';
 
 function start() {
   document.getElementById('logo-container').style.marginTop = '-10%'
@@ -14,12 +15,14 @@ function start() {
 function App() {
   return (
     <div>
-      <Template />
-      <Logo />
-      <div id='button-container'>
-        <button className="button is-medium is-rounded" id='start-button' onClick={start}>Get Started</button>
-      </div>
-      <Nav />
+      <ThemeContext.Provider value={ThemeContext}>
+        <Template />
+        <Logo />
+        <div id='button-container'>
+          <button className="button is-medium is-rounded" id='start-button' onClick={start}>Get Started</button>
+        </div>
+        <Nav />
+      </ThemeContext.Provider>
     </div>
   );
 }

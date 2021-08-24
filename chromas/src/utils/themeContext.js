@@ -1,10 +1,10 @@
 import React from 'react';
 
-const themeContext = React.createContext({
+const ThemeContext = React.createContext({
     primaryColor: 'fff',
     secondaryColor: 'fff',
     accentColor: 'fff',
     backgroundColor: 'fff'
   });
 
-export default themeContext;
+export default ThemeContext;
