@@ -26,7 +26,9 @@ function Nav() {
                         <ul>
                             <li><a>Change template</a></li>
                         </ul>
-                        <ColorSelector />
+                        <ColorSelector id="primarySelector" />
+                        <ColorSelector id="secondarySelector" />
+                        <ColorSelector id="tertiarySelector" />
                     </li>
                 </ul>
             </aside>
