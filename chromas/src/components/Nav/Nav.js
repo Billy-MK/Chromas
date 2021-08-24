@@ -25,10 +25,10 @@ function Nav() {
                         <a>Options</a>
                         <ul>
                             <li><a>Change template</a></li>
+                            <li className="m-1"><ColorSelector id="primarySelector" /></li>
+                            <li className="m-1"><ColorSelector id="secondarySelector" /></li>
+                            <li className="m-1"><ColorSelector id="tertiarySelector" /></li>
                         </ul>
-                        <ColorSelector id="primarySelector" />
-                        <ColorSelector id="secondarySelector" />
-                        <ColorSelector id="tertiarySelector" />
                     </li>
                 </ul>
             </aside>
