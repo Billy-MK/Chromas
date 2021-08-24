@@ -20,8 +20,8 @@ function ColorSelector() {
 
     return (
         <div>
-            <button onClick={toggleOpen}>selector</button>
-            {isOpen ? <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} /> : null};
+            <button onClick={toggleOpen} className="button selector"></button>
+            {isOpen ? null : <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} />};
         </div>
     )
 }

@@ -59,3 +59,8 @@
 .menu-list a {
   color: white;
 }
+
+.selector {
+  height: 40px;
+  width: 40px;
+}
