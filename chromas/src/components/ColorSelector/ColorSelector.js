@@ -12,6 +12,7 @@ function ColorSelector() {
 
     function handleChangeComplete(color) {
         setColor(color)
+        document.getElementById('test').style.backgroundColor = color.hex;
     }
 
     function toggleOpen() {
@@ -20,7 +21,7 @@ function ColorSelector() {
 
     return (
         <div>
-            <button onClick={toggleOpen} className="button selector"></button>
+            <button onClick={toggleOpen} className="button selector" id="test"></button>
             {isOpen ? null : <SketchPicker color={color} onChange={handleChange} onChangeComplete={handleChangeComplete} />};
         </div>
     )

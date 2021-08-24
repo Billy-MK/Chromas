@@ -4,7 +4,6 @@ import ColorSelector from '../ColorSelector/ColorSelector';
 function Nav() {
 
     const [isOpen, setIsOpen] = useState(false);
-    const [color, setColor] = useState('fff');
 
     function toggleSlide() {
         if (isOpen === true) {
